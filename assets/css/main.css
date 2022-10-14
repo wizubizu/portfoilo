@@ -231,20 +231,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 
 
-/*.particles-js-canvas-el{
-  height: 97% !important;
-}*/
+.particles-js-canvas-el{
+  height: inherit !important;
+  position: absolute;
+  top: 0;
+}
 
 .__intro{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  position: absolute;
-  padding: 13rem 8rem ;
+  padding:8rem ;
 }
 
 .__intro-caption{
   width: 75%;
+}
+
+.__intro-img{
+  z-index: 9;
 }
 
 .__intro__text{
@@ -276,6 +281,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .__intro__text {
   /*color: #ffc712;*/
   font-size: 54px;
+  line-height: 1.2;
   position: relative;
   font-weight: 600;
 }
@@ -312,7 +318,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   line-height: 2;
   text-align: justify;
   color: #ffffff;
-  margin: 2rem 0 0;
+  letter-spacing: 0.7px;
+  /*word-spacing: 2px;*/
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .__disc span{
@@ -335,6 +344,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.__potflot{
+  width: 22%;
 }
 
 .__potflot1{
@@ -386,8 +399,25 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .__portcard{
   box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
   margin-top: 10px;
 }
+
+.__por-caption{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.__por-discription{
+  text-align: justify;
+  letter-spacing: 0.7px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  height: 55px;
+}
+
+
+
 
 /*scrool screen*/
 .__scroolscreen {
