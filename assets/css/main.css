@@ -1,5 +1,5 @@
 /*=================================================================
-	Basic Setup css
+    Basic Setup css
 ==================================================================*/
 html {
     font-size: 100%;
@@ -8,30 +8,19 @@ html {
 }
 
 body {
-	/*font-family: 'Raleway', sans-serif;*/
-	font-family: '', Poppins-Regular;
-	font-size: 14px;
-	color: #222222;
-	font-weight: normal;
-	overflow-x: hidden;
-	line-height: 20px;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    color: #222222;
+    font-weight: normal;
+    overflow-x: hidden;
+    line-height: 20px;
 }
 
 
 @font-face{
   font-family: 'Poppins-Regular';
   src: url('../../poppins/Poppins-Regular.ttf');
-}
-
-@font-face{
-  font-family: 'Poppins-Medium';
-  src: url('../../poppins/Poppins-Medium.ttf');
-}
-
-
-@font-face{
-  font-family: 'Poppins-Bold';
-  src: url('../../poppins/Poppins-Bold.ttf');
 }
 
 
@@ -41,22 +30,22 @@ a:active,
 a:hover,
 a:focus,
 a:visited{
-	text-decoration:none;
-	/*background:transparent;*/
-	outline:none;
-	color:inherit;
+    text-decoration:none;
+    /*background:transparent;*/
+    outline:none;
+    color:inherit;
 }
 
 /*a:hover{
-	color: #663fb5 !important;
+    color: #663fb5 !important;
 }*/
 
 button:focus{
-	outline:none;
+    outline:none;
 }
 
 li{
-	/*list-style:none;*/
+    /*list-style:none;*/
 }
 
 article,
@@ -65,7 +54,7 @@ footer,
 header,
 nav,
 section{
-	display:block
+    display:block
 }
 
 select:focus {
@@ -74,19 +63,19 @@ select:focus {
 
 /* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
 @-webkit-viewport {
-	width: device-width;
+    width: device-width;
 }
 @-moz-viewport {
-	width: device-width;
+    width: device-width;
 }
 @-ms-viewport {
-	width: device-width;
+    width: device-width;
 }
 @-o-viewport {
-	width: device-width;
+    width: device-width;
 }
 @viewport {
-	width: device-width;
+    width: device-width;
 }
 
 
@@ -94,8 +83,8 @@ select:focus {
 
 
 a:focus, a:hover {
-    	text-decoration:none !important;
-	}
+        text-decoration:none !important;
+    }
 
 
 .navbar {
@@ -158,20 +147,20 @@ a:focus, a:hover {
 }
 
 
-	
+    
 
 
 ::-webkit-scrollbar{
-	height: 7px;
-	width: 7px;
+    height: 7px;
+    width: 7px;
 }
 ::-webkit-scrollbar-track{
-	border-radius: 50px;
-	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);*/
+    border-radius: 50px;
+    /*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);*/
 }
 ::-webkit-scrollbar-thumb{
-	border-radius: 1px;
-	background-color: #a7a7a7;
+    border-radius: 1px;
+    background-color: #a7a7a7;
 }
 
 
@@ -233,28 +222,29 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  /*position: absolute;*/
-  width: 100%;
-  height: 100vh;
   background-color: #ffffff;
-  background-image: url(../img/noise.gif);
-  /*background-image: url("");
-  background-image: linear-gradient(320deg, #bf1752, #2e3192);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;*/
+  background-image: url(../img/coffee-apple.jpg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 
 
-.particles-js-canvas-el{
+/*.particles-js-canvas-el{
   height: 97% !important;
-}
+}*/
 
 .__intro{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: absolute;
-  /*background: #ffffff;*/
-  margin-top: 10%;
+  padding: 13rem 8rem ;
+}
+
+.__intro-caption{
+  width: 75%;
 }
 
 .__intro__text{
@@ -287,13 +277,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   /*color: #ffc712;*/
   font-size: 54px;
   position: relative;
-  font-family: Poppins-Medium;
+  font-weight: 600;
 }
 
 
 .__intro__text::before {
   left: 2px;
-  text-shadow: blue -1px 0px;
+  /*text-shadow: blue -1px 0px;*/
   animation: 15s linear 0s infinite alternate-reverse none running noise-anim-2;
 }
 
@@ -308,7 +298,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .__intro__text::after {
   left: -2px;
-  text-shadow: red 5px 0px;
+  /*text-shadow: red 5px 0px;*/
   animation: 2s linear 0s infinite alternate-reverse none running noise-anim;
 }
 
@@ -318,13 +308,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .__disc{
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 2;
+  text-align: justify;
   color: #ffffff;
+  margin: 2rem 0 0;
+}
+
+.__disc span{
+  display: block;
 }
 
 .__disc a{
   transition: all 0.4s ease-in;
+  font-weight: 700;
   
   /*color: #6d6d6d;*/
 }
@@ -332,6 +329,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .__disc a:hover{
   text-decoration: underline !important;
   color: #ffc712;
+}
+
+.__potfo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.__potflot1{
+  width: 74%;
+  margin-right: 18px;
+  margin-top: 2rem;
 }
 
 .float-panel{
@@ -342,7 +351,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .__geto{
   /*color: #ffffff;*/
   font-size: 30px;
-  font-family: Poppins-Bold;
+  font-weight: 700;
   line-height: 1.0;
 }
 
