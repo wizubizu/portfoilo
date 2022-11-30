@@ -119,10 +119,18 @@
 
 
 @media screen and (max-width: 991px){
+
+  .__intro__text {
+     font-size: 40px;
+  }
+
+  .__intro-caption {
+    width: 70%;
+  }
   
   .float-panel {
     padding: 20px;
-    width: 248px;
+    width: 239px;
   }
 
   .__intro {
@@ -134,7 +142,7 @@
   }
 
   .__por-discription {
-    height: 115px;
+    height: 140px;
   }
 
 
