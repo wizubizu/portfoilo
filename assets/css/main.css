@@ -330,7 +330,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   text-align: justify;
   color: #ffffff;
   letter-spacing: 0.7px;
-  /*word-spacing: 2px;*/
+  z-index: 99;
   hyphens: auto;
   -webkit-hyphens: auto;
 }
