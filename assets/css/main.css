@@ -359,6 +359,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .__potflot{
   width: 22%;
+  z-index: 9;
 }
 
 .__potflot1{
